@@ -57,5 +57,3 @@ python scripts/zkSync_pr_collector.py
 
 The results will be saved in the scripts/output/ directory as Excel files.
 
-⚖️ License
-This dataset and code are released for academic research purposes.
