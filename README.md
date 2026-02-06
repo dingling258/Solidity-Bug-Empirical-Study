@@ -1,4 +1,3 @@
-markdown
 # SolBugMiner: An Empirical Study on Bug Characteristics in Solidity Smart Contracts
 
 This repository contains the replication package for our research paper. It includes the dataset of **624 real-world smart contract defects**, the **SolBugMiner** tool scripts, and the statistical analysis data used to derive our findings.
