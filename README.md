@@ -20,9 +20,10 @@ This repository contains the replication package for our research paper. It incl
 ## 🔍 Key Findings
 
 Our study reveals a paradigm shift in smart contract quality assurance:
-1.  **Defect Landscape**: Traditional DASP vulnerabilities (e.g., Reentrancy) now account for only **18.3%** of defects. The landscape is dominated by **Development Toolchain Issues (18.6%)**, **State Inconsistency (16.3%)**, and **Standard Compliance Issues (14.6%)**.
-2.  **Detection Blind Spots**: There is minimal overlap (<5.2%) between different detection mechanisms. Automated tools currently miss 99% of State Inconsistency issues.
-3.  **Fix Complexity**: Fixes for standard compliance often require deep specification understanding despite small code changes, while state inconsistency issues require systemic cross-contract refactoring.
+
+1. **Defect Landscape**: Traditional DASP vulnerabilities (e.g., Reentrancy) now account for only **18.3%** of defects. The landscape is dominated by **Development Toolchain Issues (18.6%)**, **State Inconsistency (16.3%)**, and **Standard Compliance Issues (14.6%)**.
+2. **Detection Blind Spots**: There is minimal overlap (<5.2%) between different detection mechanisms. Automated tools currently miss 99% of State Inconsistency issues.
+3. **Fix Complexity**: Fixes for standard compliance often require deep specification understanding despite small code changes, while state inconsistency issues require systemic cross-contract refactoring.
 
 ## 🚀 Usage
 
@@ -31,29 +32,32 @@ Ensure you have Python 3.8+ installed. You will need the following dependencies:
 
 ```bash
 pip install pandas openpyxl requests
+```
 
-(Note: If you have a requirements.txt, you can install via pip install -r requirements.txt)
+> **Note:** If you have a `requirements.txt`, you can install via `pip install -r requirements.txt`.
 
-2. Configuration
-Before running the collectors, check the config/ folder to ensure any necessary API keys (e.g., GitHub Personal Access Token) are configured to avoid rate limits.
+### 2. Configuration
+Before running the collectors, check the `config/` folder to ensure any necessary API keys (e.g., GitHub Personal Access Token) are configured to avoid rate limits.
 
-3. Running the Scripts
+### 3. Running the Scripts
 The scripts are modularized by project. You can run a collector for a specific project to generate its dataset.
 
-Example 1: Verify Environment
+**Example 1: Verify Environment**
 
-bash
+```bash
 python scripts/test_environment.py
+```
 
-Example 2: Collect Data for "The Graph"
+**Example 2: Collect Data for "The Graph"**
 
-bash
+```bash
 python scripts/The_Graph_merged_pr_collector.py
+```
 
-Example 3: Collect Data for "zkSync"
+**Example 3: Collect Data for "zkSync"**
 
-bash
+```bash
 python scripts/zkSync_pr_collector.py
+```
 
-The results will be saved in the scripts/output/ directory as Excel files.
-
+The results will be saved in the `scripts/output/` directory as Excel files.
